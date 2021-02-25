@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: indigo;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+}
+main{
+    width: 900px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.section-titel{
+    color: hotpink;
+    margin: 10px;
+}
+.top-players, .blogs, .corse-wrap{
+    display: grid;
+    grid-gap: 30px;
+    margin-top: 20px;
+    place-items: center;
+}
+.top-players, .corse-wrap{
+    grid-template-columns: repeat(3, 1fr);
+}
+.blogs{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog-section{
+    margin-top: 20px;
+}
+.player, .blog{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    height: 50px;
+    margin-right: 20px;
+}
+.blog img{
+    width: 200px;
+    margin-right: 20px;
+}
+.corse-img img{
+    width: 250px;
+}
+.fa-star{
+    font-size: 0.8em;
+}
+.filled{
+    color: gold;
+}
+.unfilled{
+    color: lightgray;
+}
+.retings-times{
+    display: flex;
+}
+.duration{
+    margin-left: 10px;
+}
+/* Meadia Qurray */
+@media (max-width:992px) {
+    .top-players, .corse-wrap{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width:668px) {
+    .top-players, .corse-wrap{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        display: block;
+        margin-top: 10px; 
+    }
+    .blog-info{
+        margin-top: 20px;
+    }
+}
